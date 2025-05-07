@@ -1,0 +1,39 @@
+#stick-top{
+    background-color: black;
+    height: 150px;
+    width: 80px;
+}
+
+#traffic-light{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 250px;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.light{
+    margin: 10px;
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+
+}
+.green{
+    background-color: green;
+}
+
+.selected{
+    box-shadow: 0px 0px 103px 26px rgba(255,249,133,1);
+}
