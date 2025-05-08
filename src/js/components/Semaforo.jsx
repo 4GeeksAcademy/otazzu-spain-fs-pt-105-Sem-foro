@@ -3,7 +3,8 @@ import '../../styles/semaforo.css'
 
 export const Semaforo = () => {
 
-    const [color, setColor] = useState("")
+    const [color, setColor] = useState("");
+    const [elementMade, setElementMade] = useState(false)
 
     const onClick = (event) => {
         if(event.target.id === "red"){
@@ -15,6 +16,17 @@ export const Semaforo = () => {
         if(event.target.id === "green"){
             setColor("green")
         }
+        if(event.target.id === "purple"){
+            setColor("purple")
+        }
+    }
+
+    const createPurple = () =>{
+
+        if(!elementMade){
+            setElementMade(true)
+        }
+
     }
 
     return (
@@ -45,7 +57,20 @@ export const Semaforo = () => {
                 className={"light green" + (color === "green" ? " selected": "")}>
 
                 </div>
+
+                {elementMade && (//Se renderiza solo si es true
+                    <div
+                    
+                    id="purple"
+                    onClick={onClick}
+                    className={"light purple" + (color === "purple" ? " selected": "")}>
+
+                    </div>
+                )}
+
             </div>
+
+            <button type="button" className="btn btn-success m-3" onClick={createPurple}>Generar Morado</button>
         </>
     );
 };

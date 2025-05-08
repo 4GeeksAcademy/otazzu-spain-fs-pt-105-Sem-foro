@@ -1,7 +1,7 @@
 #stick-top{
     background-color: black;
-    height: 150px;
-    width: 80px;
+    height: 100px;
+    width: 50px;
 }
 
 #traffic-light{
@@ -11,15 +11,15 @@
     align-items: center;
     background-color: black;
     width: 250px;
-    height: 600px;
+    height: 700px;
     border-radius: 15px;
 }
 
 .light{
     margin: 10px;
-    width: 175px;
-    height: 175px;
-    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .red{
@@ -32,6 +32,10 @@
 }
 .green{
     background-color: green;
+}
+
+.purple{
+    background-color: purple;
 }
 
 .selected{
